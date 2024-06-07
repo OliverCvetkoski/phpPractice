@@ -1,11 +1,11 @@
 <?php
-include_once('./dbh.inc.php');
+require_once "dbh.inc.php";
 
 // Function to delete a user by ID
 function deleteUser($id, $pdo) {
     $sqlDelete = "DELETE FROM users WHERE id = :id";
     $stmt = $pdo->prepare($sqlDelete);
-    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->bindParam(':id', $id);
     return $stmt->execute();
 }
 
