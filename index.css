@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background-color: rgb(171, 231, 231);
+  height: 100vh;
+}
+
+nav {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgb(162, 201, 235);
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  font-weight: 600;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  background-color: rgb(162, 201, 235);
+  height: 100vh;
+  border-radius: 20px;
+}
+
+.userContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.id,
+.name,
+.email {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0 0.75rem;
+}
+
+button {
+  width: 100px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-weight: 600;
+  background-color: aqua;
+  cursor: pointer;
+  border: none;
+  &:hover {
+    background-color: rgb(15, 211, 211);
+    transform: scale(1.1);
+  }
+}
+
+.table {
+  width: 90%;
+  height: fit-content;
+  overflow: auto;
+}
+
+p {
+  text-align: center;
+  padding: 2.5rem 0;
+  width: 100%;
+  background-color: red;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h1,
+p {
+  margin: 0;
+}
